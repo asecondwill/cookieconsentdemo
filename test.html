@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Track me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css" media="print" onload="this.media='all'">
+    <style>
+      body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-size: 16px;;
+      }
+      code{background-color: #222; color: green; font-family: monospace; padding: 2em; display: block;}
+    </style>
+    <!-- Facebook Pixel Code -->
+	<script data-category="analytics" data-service="Facebook Tacking" type="text/plain">
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '775962689234194'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=775962689234194&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+
+    <script data-category="analytics" data-service="Google Analytics" type="text/plain" defer>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-39425965-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+    
+
+    <!-- Google Tag Manager -->
+	<script data-category="analytics" data-service="Google Analytics" type="text/plain">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5LD79VV');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script data-category="analytics" type="text/plain" async src="//platform.twitter.com/widgets.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"></script>
+	  <script defer src="cookieconsent-init.js"></script>
+    <h1> Cookie Consent Demo</h1>   
+    <h2>Block / unblock Cookies</h2>
+
+    <p>
+      Generally, delete all cookies and refresh to test.  Adding
+      <pre>
+      <code>
+      data-category="analytics" 
+      type="text/plain" 
+    </code></pre>
+      and removing 
+      <code>  type="text/javascript"  </code>
+      from any tag is enough to get it showing in tracking.
+    </p>
+    <p>
+      <h2>autoClear</h2>
+      Not sure what this does ,  its working with facebook cookie despite not setting it up here. 
+      <pre><code>
+        // Delete specific cookies when the user opts-out of this category
+            autoClear: {
+                cookies: [
+                    {
+                        name: /^_ga/,   // regex: match all cookies starting with '_ga'
+                    },
+                    {
+                        name: '_gid',   // string: exact cookie name
+                    },
+                    {
+                        name: '_gat',
+                    },
+                    {
+                        name: '_ga',
+                    }
+                ]
+            }
+      </code></pre>
+    </p>
+    <h2>Adding indiviual Toggles</h2>
+    Add to each script tag:
+     <pre><code>data-service="Google Analytics" </code></pre>
+     
+    <p> <a class="" href="#" data-cc="show-preferencesModal">Cookies Settings</a></p>
+
+
+    	<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LD79VV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
